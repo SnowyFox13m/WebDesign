@@ -1,0 +1,19 @@
+#aboutmeheader {
+    font-size: 100pt;
+    text-align: center;
+}
+
+#MyFavoriteThings {
+    font-size: 10pt;
+    text-align: center;
+}
+
+#MyFavoriteThingsPt {
+    font-size: 10pt;
+}
+
+#allofmyfavoritethings {
+    font-weight: bold;
+    text-align: center;
+    list-style-position: inside;
+}
