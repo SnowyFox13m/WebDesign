@@ -1,6 +1,7 @@
 var express = require("express");
 var app= express();
 var path = require("path");
+var hbs = require("hbs");
 
 app.use("/js", express.static(path.join(__dirname, "js")));
 app.use("/css", express.static(path.join(__dirname, "css")));
@@ -9,7 +10,7 @@ var number_of_users_visiting = 0;
 var magic_number = Math.floor(Math.random() * 100) + 1;
 
 app.get("/", function(req, res){
-    console.log("a new visitor arrived");
+    console.log(req.querry.id);
     res.sendFile(__dirname + "\\home.html");
     
 
